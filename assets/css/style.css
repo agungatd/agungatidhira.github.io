@@ -1,7 +1,7 @@
 * {
  margin: 0;
  padding: 0;
- font-family: Georgia, sans-serif;
+ font-family: Helvetica, sans-serif;
 }
 
 @font-face {
@@ -14,94 +14,139 @@
 /*header*/
 header {
     background-image: url(../image/header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 590px;
-    border: 1px;
-    border-color: black;
-    position: relative;
+    height: 75px;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 139, 0.719);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
 }
 
 #head1 h1 {
     text-align: center;
-    padding-top: 150px;
     color: rgb(231, 230, 230);
-    font-family: moonhouseimport;
-    font-size: 70px;
-     
+    font-family: moonhouseimport, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    size: 50px;
 }
     
-
 .menu {
-    padding: 10px;
-    margin: 0;
     color: white;
-    padding-top: 50px;
     text-align: center;
 }
 
 .menu li {
     display: inline;
-	list-style-type: none;
-    padding: 50px; 
-    font-size: 25px;
-    
+    list-style-type: none;
+    margin: 0 5px;
+    padding: 0 5px;
+    border-left: 1px solid whitesmoke;
 }
 
-.menu li a{
+.menu li:hover {
+    background-color: rgba(146, 221, 221, 0.493);
+    color: yellow;
+}
+
+.menu li a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
-    margin-right: 20px;
   }
 
 /*end header*/
+
+/*BODY*/
 body {
-    clear: both;
-    background-image: url(../image/welcome.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
+    width: 100%;
+    background-image: url(../image/connectwork/connectwork.png);
+}
+
+.container {
+    background-color: #2e2c2cc4;
+    height: 700px;
+    width: 80%;
+    margin: auto;
 }
 
 .opening {
-   text-align: left;
-   color: aliceblue;
-   height: 590px;
-   padding-top: 30px; 
+   padding-top: 100px; 
+   text-align: center;
+   color: rgb(253, 252, 252);
+}
+
+.opening a {
+    color: rgb(88, 122, 235);
+    text-decoration: none;
 }
 
 .text {
+    padding: 20px 10px;
     text-align: left;
-    padding-top: 20px;
-    padding-left: 30px;
+    color: bisque;
 }
+
+.banner {
+    height: 200px;
+    background-image: url(../image/welcome.jpg);
+    background-size: cover;
+    background-position: -400px -970px;
+    filter: brightness(70%)
+}
+
+form{
+    padding-left: 10px;
+    position: relative;
+    top: 50px;
+}
+form h3 {
+    color: white;
+}
+
+label {
+    color: white;
+}
+.newsletter {
+    background-color: white;
+}
+/*End BODY*/
 
 /*FOOTER*/
 
 footer {
     color: beige;
-    background-color: rgba(31, 19, 19, 0.466);
-    height: 100px;    
+    background-color: rgba(10, 10, 10, 0.575);
 }
 
 h5 {
-
+    margin: 10px;
     float: left;
-    padding-left: 20px;
-    font-size: 20px;
+    
 }
 
-.media li {
+.media {
     float: right;
-    display: inline;
+    padding-top: 10px;
     padding-right: 10px;
+}
+.media li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.media li:hover {
+    background-color: white;
 }
 
 .credit {
+    clear: both;
     text-align: right;
-    padding-left: 20px;
+    padding-right: 10px
 }
 .credit a {
     text-decoration: none;
-    color: white;
+    color: rgb(105, 104, 104);
 }
+
+/*END*/
